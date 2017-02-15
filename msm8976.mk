@@ -111,6 +111,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     GTS2Parts
 
+# Keystore
+PRODUCT_PACKAGES += \
+    keystore.msm8952
+
 # Camera
 PRODUCT_PACKAGES += \
     camera.msm8952 \

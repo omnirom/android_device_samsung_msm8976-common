@@ -166,7 +166,7 @@ USE_DEVICE_SPECIFIC_LOC_API := true
 TARGET_NO_RPC := true
 
 # Keymaster
-TARGET_PROVIDES_KEYMASTER := true
+#TARGET_PROVIDES_KEYMASTER := true
 
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true

@@ -107,6 +107,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Gello
 
+# Keystore
+PRODUCT_PACKAGES += \
+    keystore.msm8952
 
 # Camera
 PRODUCT_PACKAGES += \

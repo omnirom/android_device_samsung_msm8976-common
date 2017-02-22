@@ -209,3 +209,8 @@ WIFI_DRIVER_FW_PATH_AP := "ap"
 WIFI_DRIVER_FW_PATH_STA := "sta"
 WIFI_DRIVER_FW_PATH_P2P := "p2p"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
+
+# Skip API checks.
+WITHOUT_CHECK_API := true
+# Don't try to build and run all tests by default.
+ANDROID_NO_TEST_CHECK := true

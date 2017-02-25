@@ -13,12 +13,6 @@
   },
   {
     "remote": "omnirom",
-    "repository": "android_kernel_samsung_msm8976",
-    "target_path": "kernel/samsung/msm8976",
-    "revision": "android-7.1"
-  },
-  {
-    "remote": "omnirom",
     "repository": "android_hardware_sony_timekeep",
     "target_path": "hardware/sony/timekeep",
     "revision": "android-7.1"

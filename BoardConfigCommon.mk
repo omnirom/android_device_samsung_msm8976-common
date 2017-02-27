@@ -190,7 +190,11 @@ TARGET_QCOM_DISPLAY_VARIANT := caf-msm8952
 TARGET_QCOM_AUDIO_VARIANT := caf-msm8952
 TARGET_QCOM_MEDIA_VARIANT := caf-msm8952
 #TARGET_ENABLE_QC_AV_ENHANCEMENTS := true
+<<<<<<< HEAD
 TARGET_QCOM_BLUETOOTH_VARIANT := caf-msm8952
+=======
+#TARGET_QCOM_BLUETOOTH_VARIANT := caf-msm8952
+>>>>>>> parent of ed8ecc2... Fix build error by removing unsupported options
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(VENDOR_PATH)/rootdir/etc/fstab.qcom

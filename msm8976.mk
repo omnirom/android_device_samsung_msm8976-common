@@ -107,6 +107,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Gello
 
+# Device Settings
+PRODUCT_PACKAGES += \
+    GTS2Parts
 
 # Camera
 PRODUCT_PACKAGES += \

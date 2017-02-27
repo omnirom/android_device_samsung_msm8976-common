@@ -15,7 +15,9 @@
  */
 
 #define CAMERA_PARAMETERS_EXTRA_C \
-    const char CameraParameters::KEY_OIS_SUPPORTED[] = "ois_supported";
+    const char CameraParameters::KEY_OIS_SUPPORTED[] = "ois_supported"; \
+    int CameraParameters::getInt64(const char *key) const { return -1; }
 
 #define CAMERA_PARAMETERS_EXTRA_H \
-    static const char KEY_OIS_SUPPORTED[];
+    static const char KEY_OIS_SUPPORTED[]; \
+    int getInt64(const char *key) const;

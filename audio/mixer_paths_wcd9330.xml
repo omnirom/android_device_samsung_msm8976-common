@@ -1130,7 +1130,19 @@
             <ctl name="STO1 ADC Capture Volume" value="47"/>
     </path>
 
-    <path name="rec-main-mic-jam">
+    <path name="handset-mic">
+        <path name="main-mic" />
+            <ctl name="IN3 Boost Volume" value="38"/>
+            <ctl name="STO1 ADC Capture Volume" value="47"/>
+    </path>
+
+   <path name="camcorder-mic">
+        <path name="main-mic" />
+            <ctl name="IN3 Boost Volume" value="38"/>
+            <ctl name="STO1 ADC Capture Volume" value="47"/>
+    </path>
+
+   <path name="rec-main-mic-jam">
         <path name="main-mic" />
             <ctl name="IN3 Boost Volume" value="48"/>
             <ctl name="STO1 ADC Capture Volume" value="47"/>
@@ -1218,6 +1230,12 @@
     <!-- ================================================================ -->
     <!-- recognition Scenario -->
     <path name="vr-main-mic">
+        <path name="main-mic" />
+            <ctl name="IN3 Boost Volume" value="38"/>
+            <ctl name="STO1 ADC Capture Volume" value="47"/>
+    </path>
+
+  <path name="voice-rec-mic">
         <path name="main-mic" />
             <ctl name="IN3 Boost Volume" value="38"/>
             <ctl name="STO1 ADC Capture Volume" value="47"/>

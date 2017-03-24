@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9828ed82_ddaaf717",
+        "filename": "GTS2Parts/src/org/omnirom/device/MDNIEScenario.java",
+        "patchSetId": 15
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1000026
+      },
+      "writtenOn": "2017-03-24T15:19:34Z",
+      "side": 1,
+      "message": "aaaah - thats the solution?",
+      "revId": "bf4ffdf37110a76b3e08a7be1db1d97d7f255af0",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
+    }
+  ]
+}

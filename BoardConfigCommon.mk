@@ -106,14 +106,6 @@ USE_CAMERA_STUB := true
 BOARD_CHARGER_ENABLE_SUSPEND := true
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
 
-
-# CMHW
-BOARD_USES_CYANOGEN_HARDWARE := true
-BOARD_HARDWARE_CLASS += \
-    hardware/cyanogen/cmhw \
-    hardware/samsung/cmhw \
-    $(VENDOR_PATH)/cmhw
-
 # Dex
 ifeq ($(HOST_OS),linux)
   ifneq ($(TARGET_BUILD_VARIANT),eng)

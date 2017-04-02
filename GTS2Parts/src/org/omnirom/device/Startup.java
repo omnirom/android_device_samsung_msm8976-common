@@ -27,5 +27,6 @@ public class Startup extends BroadcastReceiver {
     public void onReceive(final Context context, final Intent bootintent) {
         KeyHandler.setButtonSetting(context);
         MDNIEScenario.restore(context);
+        mDNIeNegativeSwitch.restore(context);
     }
 }

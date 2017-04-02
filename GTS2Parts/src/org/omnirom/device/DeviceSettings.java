@@ -36,10 +36,12 @@ public class DeviceSettings extends PreferenceActivity implements
     private static final String TAG = DeviceSettings.class.getSimpleName();
     private static final boolean DEBUG = true;
     public static final String KEY_MDNIE_SCENARIO = "mdnie_senario";
+    public static final String KEY_MDNIE_NEGATIVE_SWITCH = "mdnie_negative";
     private static final String KEY_SWAP_BACK_RECENTS = "swap_back_recents";
     private static final String KEY_HOMEBUTTON_SWITCH = "homebutton_switch";
 
     private ListPreference mMdnieSenario;
+    private TwoStatePreference mMDNIENegative;
     private TwoStatePreference mSwapBackRecents;
     private TwoStatePreference mHomeButtonSwitch;
 
@@ -63,6 +65,12 @@ public class DeviceSettings extends PreferenceActivity implements
         mHomeButtonSwitch = (TwoStatePreference) findPreference(KEY_HOMEBUTTON_SWITCH);
         mHomeButtonSwitch.setChecked(Settings.System.getInt(getContentResolver(),
                     Settings.System.BUTTON_EXTRA_KEY_MAPPING, 0) != 0);
+
+        mMDNIENegative = (TwoStatePreference) findPreference(KEY_MDNIE_NEGATIVE_SWITCH);
+        mMDNIENegative.setEnabled(mDNIeNegativeSwitch.isSupported());
+        mMDNIENegative.setChecked(mDNIeNegativeSwitch.isCurrentlyEnabled(this));
+        mMDNIENegative.setOnPreferenceChangeListener(new mDNIeNegativeSwitch());
+
 
     }
 

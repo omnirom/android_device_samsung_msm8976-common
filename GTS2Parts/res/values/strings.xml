@@ -19,6 +19,8 @@
 
     <string name="category_mdnie">MDNIE Scenario</string>
     <string name="mdnie_title">Scenario</string>
+    <string name="mdnie_negative_summary">Enable/disable inverted colors</string>
+    <string name="mdnie_negative_title">Negative mode</string>
 
     <string name="buttons_title">Buttons</string>
     <string name="swap_back_recents_summary"></string>

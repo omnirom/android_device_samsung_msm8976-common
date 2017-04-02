@@ -22,6 +22,12 @@
             android:title="@string/mdnie_title"
             android:entries="@array/mdnie_scenario_entries"
             android:entryValues="@array/mdnie_scenario_entries_values" />
+
+        <CheckBoxPreference
+            android:key="mdnie_negative"
+            android:summary="@string/mdnie_negative_summary"
+            android:title="@string/mdnie_negative_title"
+            android:persistent="false" />
     </PreferenceCategory>
 
     <PreferenceCategory

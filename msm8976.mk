@@ -114,7 +114,6 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     camera.msm8952 \
-    libc_shim \
     SnapdragonCamera
 
 # Display
@@ -136,7 +135,6 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-    gps.msm8952 \
     libcurl
 
 PRODUCT_PACKAGES += \

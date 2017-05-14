@@ -129,6 +129,10 @@ PRODUCT_PACKAGES += \
     fingerprintd \
     fingerprint.msm8952
 
+# Encryption
+PRODUCT_PACKAGES += \
+    libcryptfs_hw
+
 # For android_filesystem_config.h
 PRODUCT_PACKAGES += \
     fs_config_files

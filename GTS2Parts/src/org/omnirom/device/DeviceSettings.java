@@ -57,8 +57,8 @@ public class DeviceSettings extends PreferenceActivity implements
         mMdnieSenario.setOnPreferenceChangeListener(this);
 
         mSwapBackRecents = (TwoStatePreference) findPreference(KEY_SWAP_BACK_RECENTS);
-        mSwapBackRecents.setChecked(Settings.System.getInt(getContentResolver(),
-                    Settings.System.BUTTON_SWAP_BACK_RECENTS, 0) != 0);
+//        mSwapBackRecents.setChecked(Settings.System.getInt(getContentResolver(),
+                    //Settings.System.BUTTON_SWAP_BACK_RECENTS, 0) != 0);
 
         mHomeButtonSwitch = (TwoStatePreference) findPreference(KEY_HOMEBUTTON_SWITCH);
         mHomeButtonSwitch.setChecked(Settings.System.getInt(getContentResolver(),
@@ -80,11 +80,11 @@ public class DeviceSettings extends PreferenceActivity implements
 
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-        if (preference == mSwapBackRecents) {
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.BUTTON_SWAP_BACK_RECENTS, mSwapBackRecents.isChecked() ? 1 : 0);
-            return true;
-        }
+//        if (preference == mSwapBackRecents) {
+//            Settings.System.putInt(getContentResolver(),
+//                    Settings.System.BUTTON_SWAP_BACK_RECENTS, mSwapBackRecents.isChecked() ? 1 : 0);
+//            return true;
+//        }
 
         if (preference == mHomeButtonSwitch) {
             Settings.System.putInt(getContentResolver(),

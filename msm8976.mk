@@ -109,7 +109,11 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     camera.msm8952 \
-    SnapdragonCamera
+    libcamera_parameters_shim
+
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.0-impl
 
 # Display
 PRODUCT_PACKAGES += \

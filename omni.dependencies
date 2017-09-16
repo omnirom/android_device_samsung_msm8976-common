@@ -25,18 +25,6 @@
   },
   {
     "remote": "omnirom",
-    "repository": "android_external_libnfnetlink",
-    "target_path": "external/libnfnetlink",
-    "revision": "android-8.0"
-  },
-  {
-    "remote": "omnirom",
-    "repository": "android_external_libnetfilter_conntrack",
-    "target_path": "external/libnetfilter_conntrack",
-    "revision": "android-8.0"
-  },
-  {
-    "remote": "omnirom",
     "repository": "android_hardware_qcom_gps",
     "target_path": "hardware/qcom/gps",
     "revision": "android-8.0"

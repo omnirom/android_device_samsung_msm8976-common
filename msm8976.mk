@@ -118,8 +118,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.hardware.camera.provider@2.4-impl \
-    camera.device@3.2-impl \
+    android.hardware.camera.provider@2.4-impl.legacy \
     camera.msm8952 \
     SnapdragonCamera \
     libcamera_parameters_shim
@@ -144,7 +143,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service \
+    android.hardware.biometrics.fingerprint@2.1-service.2.0 \
     fingerprint.msm8952
 
 # For android_filesystem_config.h
@@ -161,7 +160,8 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-    libcurl
+    libcurl \
+    libshims_get_process_name
 
 PRODUCT_PACKAGES += \
     flp.conf \

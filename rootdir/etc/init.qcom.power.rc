@@ -19,6 +19,8 @@ on boot
 
     # Enable sched boost
     write /proc/sys/kernel/sched_boost 1
+    
+    trigger enable-low-power
 
 on enable-low-power
     # HMP scheduler (big.Little cluster related) settings
@@ -193,9 +195,7 @@ on charger
     # Set perfd properties
     rm /data/system/perfd/default_values
     start perfd
-
-on class_start:late_start
-    trigger enable-low-power
+    
 
 on property:init.svc.recovery=running
     trigger enable-low-power

@@ -19,7 +19,8 @@ on boot
 
     # Enable sched boost
     write /proc/sys/kernel/sched_boost 1
-    
+
+on post-fs-data
     trigger enable-low-power
 
 on enable-low-power

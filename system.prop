@@ -73,9 +73,6 @@ persist.media.treble_omx=false
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
-# Storage
-ro.sys.sdcardfs=false
-
 # TCP
 net.tcp.2g_init_rwnd=10
 

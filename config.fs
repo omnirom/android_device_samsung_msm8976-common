@@ -1,4 +1,10 @@
-[system/vendor/bin/cnss-daemon]
+[AID_RFS]
+value:2951
+
+[AID_RFS_SHARED]
+value:2952
+
+[system/bin/cnss-daemon]
 mode: 0755
 user: AID_SYSTEM
 group: AID_SYSTEM

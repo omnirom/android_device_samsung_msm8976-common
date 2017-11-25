@@ -1300,9 +1300,9 @@ on post-fs-data
     # qti-logkit data
     mkdir /data/misc/qti-logkit/ 0771 system system
     mkdir /data/misc/qti-logkit/shared-privileged/ 2770 system system
-    mkdir /data/misc/qti-logkit/shared-public/ 2770 system oem_2950
+    mkdir /data/misc/qti-logkit/shared-public/ 2770 system qcom_diag
     mkdir /data/misc/qti-logkit/socket-privileged/ 2770 system system
-    mkdir /data/misc/qti-logkit/socket-public/ 2750 system oem_2950
+    mkdir /data/misc/qti-logkit/socket-public/ 2750 system qcom_diag
     mkdir /data/misc/qti-logkit/logdata/ 2750 system shell
 
     # RIDL data
@@ -1395,7 +1395,7 @@ on property:wc_transport.start_hci=false
 service start_hci_filter /vendor/bin/wcnss_filter
     class late_start
     user bluetooth
-    group bluetooth oem_2950
+    group bluetooth qcom_diag
     disabled
 
 # FM
@@ -1432,7 +1432,7 @@ service wpa_supplicant /system/vendor/bin/hw/wpa_supplicant \
 service loc_launcher /vendor/bin/loc_launcher
     #loc_launcher will start as root and set its uid to gps
     class late_start
-    group gps inet oem_2950 wifi
+    group gps inet qcom_diag wifi
 
 on property:ro.data.large_tcp_window_size=true
     # Adjust socket buffer to enlarge TCP receive window for high bandwidth (e.g. DO-RevB)

@@ -1,6 +1,9 @@
 allow system_app sysfs_mdnie:file rw_file_perms;
 
 allow system_app time_data_file:dir search;
-allow system_app time_data_file:file rw_file_perms;
+allow system_app time_data_file:file { write open getattr };
 
 set_prop(system_app, timekeep_prop)
+
+allow system_app fuse_device:filesystem getattr;
+

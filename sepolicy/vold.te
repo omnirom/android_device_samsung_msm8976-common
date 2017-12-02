@@ -1,0 +1,2 @@
+allow vold fuse_device:dir { open read };
+

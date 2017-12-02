@@ -11,4 +11,8 @@ allow system_server shell_prop:property_service set;
 
 # trying to fix stuff
 allow system_server qti_debugfs:file { getattr open read };
+allow system_server unlabeled:file unlink;
+allow system_server fuse_device:dir getattr;
+
+
 

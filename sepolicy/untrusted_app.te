@@ -1,3 +1,8 @@
 allow untrusted_app fuse_device:dir { getattr open read setattr };
 allow untrusted_app fuse_device:filesystem getattr;
+allow untrusted_app self:udp_socket ioctl;
 
+allow untrusted_app anr_data_file:dir read;                                                                             
+allow untrusted_app firmware_file:dir read;                                                                             
+allow untrusted_app mac_perms_file:file getattr;                                                                        
+                                                           

@@ -1,4 +1,4 @@
-allow untrusted_app_25 fuse_device:dir { getattr open read write search setattr };
-allow untrusted_app_25 fuse_device:file { getattr open read write setattr };
+allow untrusted_app_25 fuse_device:dir { getattr open read write search setattr add_name create };
+allow untrusted_app_25 fuse_device:file { getattr setattr open read write create append };
 allow untrusted_app_25 fuse_device:filesystem getattr;
 

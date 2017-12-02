@@ -4,4 +4,5 @@ allow priv_app fuse_device:file setattr;
 #allow priv_app init:unix_stream_socket connectto;
 allow priv_app proc_interrupts:file { open read };
 #allow priv_app property_socket:sock_file write;
+allow priv_app net_dns_prop:file read;
 

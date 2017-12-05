@@ -1201,9 +1201,6 @@ on post-fs-data
     # Create directory for TZ Apps
     mkdir /data/misc/qsee 0770 system system
 
-    # Create data for timekeep
-    mkdir /data/time/ 0700 system system
-
     # We will remap this as /mnt/sdcard with the sdcard fuse tool
     mkdir /data/misc/camera 0770 camera camera
 
@@ -1277,6 +1274,7 @@ on post-fs-data
 
     # Create /data/vendor/time folder for time-services
     mkdir /data/vendor/time/ 0700 system system
+    symlink /data/vendor/time /data/time
 
     mkdir /data/audio/ 0770 media audio
 

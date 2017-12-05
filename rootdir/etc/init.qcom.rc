@@ -1203,6 +1203,8 @@ on post-fs-data
 
     # Create data for timekeep
     mkdir /data/time/ 0700 system system
+    # symlink to /data/vendor/time
+    symlink /data/time /data/vendor/time
 
     # We will remap this as /mnt/sdcard with the sdcard fuse tool
     mkdir /data/misc/camera 0770 camera camera

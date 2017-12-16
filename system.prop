@@ -85,3 +85,5 @@ wifi.interface=wlan0
 # set SELinux property value
 ro.build.selinux=1
 
+# sdcardfs disable gid derivation
+ ro.sys.sdcardfs.gid_derivation.enable=false

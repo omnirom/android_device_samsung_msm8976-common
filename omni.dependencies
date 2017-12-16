@@ -3,7 +3,7 @@
     "remote": "omnirom",
     "repository": "android_device_qcom_caf-sepolicy",
     "target_path": "device/qcom/sepolicy",
-    "revision": "android-8.0"
+    "revision": "android-8.1"
   },
   {
     "remote": "omnirom",
@@ -68,7 +68,7 @@
     "remote": "omnirom",
     "repository": "android_vendor_qcom_opensource_interfaces",
     "target_path": "vendor/qcom/opensource/interfaces",
-    "revision": "android-8.0"
+    "revision": "android-8.1"
   }
 
 ]

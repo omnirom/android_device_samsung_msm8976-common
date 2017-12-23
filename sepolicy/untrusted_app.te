@@ -1,3 +1,4 @@
 allow untrusted_app fuse_device:dir { getattr open read setattr };
 allow untrusted_app fuse_device:filesystem getattr;
-
+allow untrusted_app proc:file read;
+allow untrusted_app storage_stub_file:dir getattr;

@@ -1,0 +1,2 @@
+allow mediaprovider fuse_device:dir { getattr open read search };
+allow mediaprovider fuse_device:file { getattr open read search };

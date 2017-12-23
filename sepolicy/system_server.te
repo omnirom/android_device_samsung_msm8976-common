@@ -6,9 +6,13 @@ allow system_server sysfs_mdnie:file rw_file_perms;
 
 r_dir_file(system_server, app_efs_file)
 
+# allow system_server dalvikcache_data_file:file { execute write };
+
 # ADB over network
 allow system_server shell_prop:property_service set;
 
 # trying to fix stuff
 allow system_server qti_debugfs:file { getattr open read };
 
+allow system_server unlabeled:file unlink;
+allow system_server fuse_device:dir { open read getattr search };

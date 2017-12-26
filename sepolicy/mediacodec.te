@@ -1,1 +1,2 @@
 r_dir_file(mediacodec, firmware_file)
+unix_socket_connect(mediacodec, mpctl, perfd)

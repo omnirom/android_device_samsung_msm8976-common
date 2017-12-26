@@ -16,3 +16,11 @@ allow system_server qti_debugfs:file { getattr open read };
 
 allow system_server unlabeled:file unlink;
 allow system_server fuse_device:dir { open read getattr search };
+
+# Access to perflock
+allow system_server mpctl_socket:dir r_dir_perms;
+unix_socket_send(system_server, mpctl, perfd)
+unix_socket_connect(system_server, mpctl, perfd)
+
+# Access to time_daemon
+allow system_app time_daemon:unix_stream_socket connectto;

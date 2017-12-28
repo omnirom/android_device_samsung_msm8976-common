@@ -1,1 +1,4 @@
 type_transition thermal-engine socket_device:sock_file thermal_socket;
+
+allow thermal-engine sysfs_rmt_storage:dir search;
+allow thermal-engine sysfs_rmt_storage:file r_file_perms;

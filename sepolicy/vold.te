@@ -1,1 +1,1 @@
-allow vold fuse_device:dir { open read write search add_name };
+allow vold fuse_device:dir { open read write search add_name create };

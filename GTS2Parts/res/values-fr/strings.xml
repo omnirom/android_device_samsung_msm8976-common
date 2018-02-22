@@ -16,10 +16,10 @@
 -->
 <resources>
   <string name="app_name">Galaxy Tab S2</string>
-  <string name="advanced_settings">Avancé</string>
+  <string name="advanced_settings">Paramètres avancés</string>
   <string name="category_mdnie">Scénario MDNIE</string>
   <string name="mdnie_title">Scénario</string>
   <string name="buttons_title">Boutons</string>
-  <string name="swap_back_recents_title">Échanger les boutons retour et récent</string>
-  <string name="homebutton_switch_title">Activer le reveil de l\'appareil avec la touche accueil</string>
+  <string name="swap_back_recents_title">Permuter le bouton retour et le bouton app. récents</string>
+  <string name="homebutton_switch_title">Activer le réveil de l\'appareil avec la touche accueil</string>
 </resources>

@@ -15,10 +15,10 @@
 -->
 
 <resources>
-    <!-- Theme for the activity com.android.phone.Settings, which is the
-         "Mobile network settings" screen (used on non-voice-capable
-         tablets as well as regular phone devices.) -->
-    <style name="Theme.Main" parent="@android:style/Theme.Holo">
-        <item name="android:actionBarStyle">@android:style/Widget.Holo.ActionBar.Solid</item>
+    <style name="AppTheme" parent="@android:style/Theme.DeviceDefault.Settings">
+        <item name="preferenceTheme">@style/PreferenceTheme</item>
+    </style>
+
+    <style name="PreferenceTheme" parent="@style/PreferenceThemeOverlay.SettingsBase">
     </style>
 </resources>

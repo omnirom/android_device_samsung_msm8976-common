@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+><?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2016 The CyanogenMod Project
                (C) 2017 The LineageOS Project
 
@@ -281,7 +281,7 @@
 
     <!-- For performance and storage reasons, limit the number of fingerprints per user -->
     <integer name="config_fingerprintMaxTemplatesPerUser">4</integer>
-</resources>
 
    <bool name="config_fingerprintRemoveClientOnCancel">true</bool>
-   
+
+</resources>

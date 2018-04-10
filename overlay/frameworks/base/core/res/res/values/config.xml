@@ -281,7 +281,7 @@
 
     <!-- For performance and storage reasons, limit the number of fingerprints per user -->
     <integer name="config_fingerprintMaxTemplatesPerUser">4</integer>
-</resources>
 
    <bool name="config_fingerprintRemoveClientOnCancel">true</bool>
-   
+
+</resources>

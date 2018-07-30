@@ -1,5 +1,5 @@
 allow vold fuse_device:dir { open read write search add_name create };
 allow vold fuse_device:file { open read write create };
-allow vold adsprpcd_file:dir read;
-allow vold efs_file:dir read;
-allow vold persist_file:dir read;
+allow vold adsprpcd_file:dir { open read };
+allow vold efs_file:dir { open read };
+allow vold persist_file:dir { open read };

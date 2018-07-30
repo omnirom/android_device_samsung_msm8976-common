@@ -6,3 +6,7 @@ allow untrusted_app_25 storage_stub_file:dir getattr;
 
 allow untrusted_app_25 camera_prop:file read;
 allow untrusted_app_25 sysfs:file read;
+
+#allow untrusted_app_25 debugsfs_wakelock:file read;
+#allow untrusted_app_25 rootfs:dir read;
+#allow untrusted_app_25 serialno_prop:file read;
